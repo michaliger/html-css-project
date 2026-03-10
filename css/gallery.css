@@ -1,0 +1,100 @@
+.top-img {
+    width: 100%;
+    height: 500px;
+    background-image: url(../files/images/banner_optimized.jpg);
+}
+
+.gallery-top:hover {
+    color: black;
+}
+
+main {
+    background-color: #FFDA00;
+}
+
+h1 {
+    align-self: center;
+    font-size: 5rem;
+    color: #ce0e2d;
+    text-shadow: 2px 2px 8px black;
+    align-self: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.gallery {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.width {
+    width: 30%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0.5%;
+    animation: scaleUp 1s ease-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    animation-iteration-count: 1;
+}
+
+.width:hover img {
+    animation: width;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes width {
+    from {
+        transition: transform 0.3s ease;
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+
+    buttom {
+        font-size: xx-large;
+    }
+}
+
+
+@media(max-width: 760px) {
+    .top-img {
+        background-position: center;
+        height: 300px;
+    }
+
+    h1 {
+        margin: 6% 0;
+    }
+
+    .gallery {
+        width: 100%;
+        justify-content: center;
+
+        img {
+            width: 40%;
+        }
+
+        img:hover {
+            width: 40%;
+        }
+    }
+}

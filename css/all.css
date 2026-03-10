@@ -1,0 +1,206 @@
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: "Bamberger", Sans-serif;
+}
+
+.second-nav {
+    display: none;
+}
+
+
+header>a {
+    align-self: center;
+    justify-content: flex-end;
+    width: 20%;
+
+    img {
+        width: 120px;
+        margin-left: 10px;
+    }
+}
+
+header {
+    width: 100%;
+    background-color: #ffd900a8;
+    position: fixed;
+
+    nav {
+        width: 80%;
+    }
+
+    ul {
+        margin: 0;
+        list-style-type: none;
+        font-size: 1.25rem;
+        font-family: "Bamberger", Sans-serif;
+        transition: width 1s, height 1s;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            margin: 1.5% 1%;
+        }
+
+        a:hover {
+            color: #CE0E2D;
+            transform: scale(1.25);
+            animation-name: nav;
+            animation-duration: 1s;
+        }
+    }
+}
+
+header div {
+    display: none;
+    width: 100%;
+
+    img {
+        width: 5%;
+        margin: 2%;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+@keyframes nav {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.25);
+    }
+}
+
+footer {
+    align-items: center;
+    background-color: black;
+
+    a p {
+        margin: -10px 0 30px 0;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+.button {
+    color: black;
+    align-self: center;
+    background-color: #F7941D;
+    padding: 1.25% 3%;
+    font-family: "Bamberger", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 4% 0 2% 0;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #61CE70;
+    animation-duration: 1s;
+    animation-name: button;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(90%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button {
+    from {
+        background-color: #F7941D;
+    }
+
+    to {
+        background-color: #61CE70;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .button {
+        padding: 4% 8%;
+    }
+}
+
+@media only screen and (max-width: 120px) {
+    header {
+        height: 20vh;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header>nav {
+        display: none;
+    }
+
+    header>a {
+        margin: 2%;
+        align-self: flex-start;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        margin: auto;
+        top: 15px;
+        right: 15px;
+        z-index: 100;
+        background: none;
+        border: none;
+        color: #CE0E2D;
+        align-self: center;
+        height: 2px;
+    }
+
+    .second-nav {
+        display: flex;
+        
+    }
+
+    header{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    header>a {
+        justify-content: flex-end;
+    }
+}

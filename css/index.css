@@ -1,0 +1,294 @@
+main>img {
+    width: 50px;
+}
+
+.homepage:hover {
+    color: black;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    animation-name: images;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes images {
+    5% {
+        background-image: url(../files/images/index/FIL_7307201_638714294307804269.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    15% {
+        background-image: url(../files/images/banner_optimized.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    30% {
+        background-image: url(../files/images/index/673311930437bd3a4c3227fb.webp);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    45% {
+        background-image: url(../files/images/222_optimized.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    60% {
+        background-image: url(../files/images/WhatsApp-Image-2024-05-21-at-17.37.56-2.jpeg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    75% {
+        background-image: url(../files/images/index/321_optimized.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    100% {
+        background-image: url(../files/images/index/FIL_6976715_1707231620926.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+main {
+
+    .Changing-images {
+        width: 100%;
+    }
+
+    .second-div {
+        background-color: #FFDA00;
+    }
+
+    .icon {
+        width: 15%;
+        align-self: center;
+        margin-top: -12%;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .logo {
+        width: 20%;
+        margin-top: -5%;
+        align-self: center;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .adout {
+        flex-direction: row-reverse;
+        height: 600px;
+    }
+
+    .first-about {
+        align-self: flex-start;
+        width: 50%;
+        height: 600px;
+        background-image: url(../files/images/index/זלמנס-1-טלחופש.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    }
+    .asaid-about {
+        width: 50%;
+        animation: fadeIn 1.5s ease-in-out;
+
+        .background1 {
+            width: 70%;
+            align-self: center;
+            margin-top: 10%;
+        }
+
+        .second-icon {
+            width: 20%;
+            align-self: center;
+            margin-top: -40%;
+            margin-bottom: 4%;
+        }
+
+        h2 {
+            align-self: center;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: -2px 0 30px 0;
+        }
+
+        p {
+            width: 60%;
+            align-self: center;
+            font-size: 20px;
+            margin-top: 10%;
+            margin-bottom: 15px;
+        }
+    }
+
+
+
+.flex-column>.hat {
+    width: 20%;
+}
+
+span {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url(../files/images/index/img-bhiden-the-page.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.third-div {
+    background-color: #FFDA00;
+    width: 100%;
+    flex-direction: row-reverse;
+
+    .first-third-div {
+        width: 50%;
+        align-items: center;
+        animation: fadeIn 1.5s ease-in-out;
+
+        .background2 {
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        .hat {
+            width: 13%;
+            margin-top: -27%;
+        }
+
+        h2 {
+            color: white;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 120px;
+            width: 70%;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        a {
+            margin-bottom: 25px;
+        }
+    }
+
+    .img {
+        width: 50%;
+        height: 600px;
+        background-image: url(../files/images/index/673311930437bd3a4c3227fb.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img>img {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+.booklet {
+    background-image: url(../files/images/index/‏‏לכידה.PNG);
+    width: calc(100%-14px);
+    height: 300px;
+    border: #ce0e2d dashed 7px;
+    background-size: cover;
+    background-position: center;
+
+    a {
+        margin: auto;
+    }
+}
+
+.yellow {
+    width: 100%;
+    height: 400px;
+    background-color: #FFDA00;
+}
+
+marquee {
+    width: 100%;
+    height: 200vh;
+
+    img {
+        width: 20%;
+    }
+}
+
+.image-slider {
+    align-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    width: max-content;
+    animation: slide 20s linear infinite;
+}
+
+.image-container img {
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 5%;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-about,.img{
+        display: none;
+    }
+    .asaid-about,.first-third-div {
+        width: 1200px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .first-third-div{
+        width: 1200px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    } */
+    .background {
+        width: 100%;
+    }
+
+    .img-container {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img-container {
+        height: 80vh;
+    }
+}

@@ -1,0 +1,221 @@
+.second-div {
+  flex-direction: row-reverse;
+  background-color: #FFDA00;
+}
+
+.events:hover {
+  color: black;
+}
+
+.images-container {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  animation-name: images;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: ease-in;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: auto;
+  align-self: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+}
+
+@keyframes images {
+  0% {
+    background-image: url(../files/images/events/events2.jpeg);
+  }
+
+  14% {
+    background-image: url(../files/images/events/events3.jpeg);
+  }
+
+  28% {
+    background-image: url(../files/images/events/events4.jpeg);
+  }
+
+  42% {
+    background-image: url(../files/images/events/events5.jpeg);
+  }
+
+  57% {
+    background-image: url(../files/images/events/events6.jpeg);
+  }
+
+  71% {
+    background-image: url(../files/images/events/events7.jpeg);
+  }
+
+  85% {
+    background-image: url(../files/images/events/enents8.jpeg);
+  }
+
+  100% {
+    background-image: url(../files/images/events/events2.jpeg);
+  }
+}
+
+.img {
+  width: 40%;
+  margin: 5%;
+}
+
+aside {
+  width: 40%;
+  align-items: center;
+  margin: 5% 5%;
+  height: 80vh;
+
+  h2 {
+    color: #ce0e2d;
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+form {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10%;
+  height: 17vh;
+
+  .input {
+    height: 50%;
+    background-color: #FFFFFF;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .Details {
+    width: 49%;
+    height: 60%;
+    margin-bottom: -2%;
+  }
+
+  label {
+    flex-direction: row-reverse;
+  }
+
+  .massage {
+    width: 99.5%;
+    height: 140%;
+    margin-bottom: -60px;
+  }
+
+  .margin {
+    margin-right: 2%;
+  }
+}
+
+.form>a {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reset {
+  width: 100%;
+  display: flex;
+  height: 35px;
+  margin-top: 1%;
+
+  input {
+    width: 49%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ce0e2d;
+    color: white;
+    font-size: 1rem;
+  }
+
+  a {
+    width: 49%;
+    background-color: #ce0e2d;
+    margin-right: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    height: 100%;
+  }
+
+  a:hover,
+  input:hover {
+    color: black;
+    background-color: #ce0e2e98;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .Details {
+    margin: 0;
+    width: 3000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .second-div {
+    flex-direction: column;
+    width: 100%;
+
+    aside {
+      width: 80%;
+      align-self: center;
+
+      .Details {
+        height: 10vh;
+      }
+
+      .massage {
+        height: 22vh;
+        width: 99.5%;
+      }
+
+      form {
+        margin-bottom: 0;
+      }
+    }
+
+    .img {
+      width: 60%;
+      align-self: center;
+    }
+  }
+
+  .images-container {
+    height: 80vh;
+  }
+
+  .reset {
+    margin-top: 10px;
+  }
+}
