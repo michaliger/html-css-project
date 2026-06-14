@@ -14,32 +14,31 @@
     <header class="flex-row">
         <nav>
             <ul class="flex-row">
-                <li class="flex-row"><a class="homepage" href="index.html">דף הבית-זלמנס</a></li>
-                <li class="flex-row"><a href="#">סניפים ומישלוחים</a></li>
-                <li class="flex-row"><a href="pages/about.html">אודות</a></li>
-                <li class="flex-row"><a href="pages/menu.html">תפריט</a></li>
-                <li class="flex-row"><a href="pages/gallery.html">גלריה</a></li>
-                <li class="flex-row"><a href="pages/events.html">אירועים</a></li>
-                <li class="flex-row"><a href="#">זכיינות</a></li>
-                <li class="flex-row"><a href="#">צור קשר</a></li>
-                <li class="flex-row"><a href="#">נגישות הסניפים</a></li>
+                <li class="flex-row"><a href="index.html">דף הבית-זלמנס</a></li>
+                <li class="flex-row"><a href="./pages/about.html">אודות</a></li>
+                <li class="flex-row"><a href="./pages/menu.html">תפריט</a></li>
+                <li class="flex-row"><a href="./pages/gallery.html">גלריה</a></li>
+                <li class="flex-row"><a href="./pages/events.html">אירועים</a></li>
+
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-login-btn"
+                        href="./pages/login.html?mode=login">התחברות</a></li>
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-register-btn"
+                        href="./pages/login.html?mode=register">הרשמה</a></li>
             </ul>
         </nav>
-        <div class="second-nav flex-row">
+        <div>
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
-                <li><a class="homepage" href="index.html">דף הבית-זלמנס</a></li>
-                <li><a href="#">סניפים ומישלוחים</a></li>
-                <li><a href="pages/about.html">אודות</a></li>
-                <li><a href="pages/menu.html">תפריט</a></li>
-                <li><a href="pages/gallery.html">גלריה</a></li>
-                <li><a href="pages/events.html">אירועים</a></li>
-                <li><a href="#">זכיינות</a></li>
-                <li><a href="#">צור קשר</a></li>
-                <li><a href="#">נגישות הסניפים</a></li>
+                <li><a href="./pages/index.html">דף הבית-זלמנס</a></li>
+                <li><a href="./pages/about.html">אודות</a></li>
+                <li><a href="./pages/menu.html">תפריט</a></li>
+                <li><a href="./pages/gallery.html">גלריה</a></li>
+                <li><a href="./pages/events.html">אירועים</a></li>
+                <li><a class="auth-nav-link" href="./pages/login.html?mode=login">התחברות</a></li>
+                <li><a class="auth-nav-link" href="./pages/login.html?mode=register">הרשמה</a></li>
             </ul>
         </div>
-        <a href="index.html" class="flex-row"><img src="files/images/index/Name-2048x561.png" alt="logo"></a>
+        <a href="./pages/index.html" class="flex-row"><img src="./files/images/index/Name-2048x561.png" alt="logo"></a>
     </header>
     <main>
         <div class="flex-row img-container">
@@ -106,3 +105,4 @@
 </body>
 
 </html>
+<script src="js/auth.js"></script>

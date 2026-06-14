@@ -1,0 +1,93 @@
+/* עיצוב כללי לאזור התוכן המרכזי */
+.main-auth {
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #fdfdfd; /* רקע בהיר ונקי */
+    min-height: 60vh;
+}
+
+/* קוביית הטופס */
+.auth-box {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+.auth-box h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* קבוצות השדות */
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* שדות הקלט - מבוסס על סגנון ה-inputים של האתר שלך */
+.auth-box .input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.auth-box .input:focus {
+    border-color: #d9534f; /* הברקה בצבע המותג האדום */
+    outline: none;
+}
+
+/* כפתור השליחה - יורש את הסטייל של הלחצנים באתר */
+.btn-submit {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* קישור המעבר בין טפסים */
+.toggle-link {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.toggle-link:hover {
+    color: #d9534f;
+}
+
+/* הודעות שגיאה */
+.error-msg {
+    color: #d9534f;
+    font-size: 14px;
+    margin: -5px 0 15px 0;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+/* הסתרת אלמנטים */
+.hidden {
+    display: none !important;
+}

@@ -204,3 +204,20 @@ footer {
         justify-content: flex-end;
     }
 }
+/* דחיפת כפתור ההתחברות וההרשמה לצד שמאל של התפריט, ליד הלוגו */
+header nav ul {
+    justify-content: flex-start; /* שומר על שאר הקישורים מימין */
+}
+
+.auth-item:first-of-type {
+    margin-right: auto; /* יוצר מרווח אוטומטי מימין ודוחף את הלחצנים שמאלה */
+}
+
+.auth-nav-link {
+    font-weight: bold;
+    color: #ce0e2d !important; /* צבע אדום בולט של המותג כדי להדגיש אותם */
+}
+
+.auth-nav-link:hover {
+    color: black !important;
+}

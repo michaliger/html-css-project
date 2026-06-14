@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,33 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="icon" href="../files/images/favicon.png" type="image/x-icon">
 </head>
+
 <body dir="rtl">
     <header class="flex-row">
         <nav>
             <ul class="flex-row">
                 <li class="flex-row"><a href="../index.html">דף הבית-זלמנס</a></li>
-                <li class="flex-row"><a href="#">סניפים ומישלוחים</a></li>
-                <li class="flex-row"><a class="about" href="about.html">אודות</a></li>
+                <li class="flex-row"><a href="about.html">אודות</a></li>
                 <li class="flex-row"><a href="menu.html">תפריט</a></li>
                 <li class="flex-row"><a href="gallery.html">גלריה</a></li>
                 <li class="flex-row"><a href="events.html">אירועים</a></li>
-                <li class="flex-row"><a href="#">זכיינות</a></li>
-                <li class="flex-row"><a href="#">צור קשר</a></li>
-                <li class="flex-row"><a href="#">נגישות הסניפים</a></li>
+
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-login-btn"
+                        href="login.html?mode=login">התחברות</a></li>
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-register-btn"
+                        href="login.html?mode=register">הרשמה</a></li>
             </ul>
         </nav>
         <div>
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
                 <li><a href="index.html">דף הבית-זלמנס</a></li>
-                <li><a href="#">סניפים ומישלוחים</a></li>
-                <li><a class="about" href="pages/about.html">אודות</a></li>
+                <li><a href="about.html">אודות</a></li>
                 <li><a href="menu.html">תפריט</a></li>
-                <li><a href="pages/gallery.html">גלריה</a></li>
-                <li><a href="pages/events.html">אירועים</a></li>
-                <li><a href="#">זכיינות</a></li>
-                <li><a href="#">צור קשר</a></li>
-                <li><a href="#">נגישות הסניפים</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="events.html">אירועים</a></li>
+                <li><a class="auth-nav-link" href="login.html?mode=login">התחברות</a></li>
+                <li><a class="auth-nav-link" href="login.html?mode=register">הרשמה</a></li>
             </ul>
         </div>
         <a href="../index.html" class="flex-row"><img src="../files/images/index/Name-2048x561.png" alt="logo"></a>
@@ -43,13 +44,16 @@
         <div class="img flex-row">
             <h1>about</h1>
         </div>
-        <div class="flex-column">        
+        <div class="flex-column">
             <h2>אודות זלמנ׳ס</h2>
             <article>
                 <p>הרומן של זלמן עם נקניקיות החל עוד משחר ילדותו באמריקה.
-                כל הטעמים הבלתי נשכחים, הריחות הנוסטלגיים והחוויה של נקניקייה בלחמניה הם חלק בלתי נפרד מהחזון לרשת נקניקיות בסגנון אמריקאי, שכולה חוויה, בישראל.</p>
-                <p>הנקניקיות שלנו ללא חומרים משמרים, ללא כימיקלים ללא גלוטן או תוספות כלשהן – מה שמבטיח מוצר שכולו 100% בשר איכותי ומובחר.</p>
-                <p>כחובב נקניקיות זלמן חבר לאלן טלמור השף השרקוטייר העולמי, המתמחה בייצור נקניקיות, וביחד ייצרו נקניקיות ונקניקים מעושנים באיכות מעולה וטעם בלתי נשכח!</p>
+                    כל הטעמים הבלתי נשכחים, הריחות הנוסטלגיים והחוויה של נקניקייה בלחמניה הם חלק בלתי נפרד מהחזון לרשת
+                    נקניקיות בסגנון אמריקאי, שכולה חוויה, בישראל.</p>
+                <p>הנקניקיות שלנו ללא חומרים משמרים, ללא כימיקלים ללא גלוטן או תוספות כלשהן – מה שמבטיח מוצר שכולו 100%
+                    בשר איכותי ומובחר.</p>
+                <p>כחובב נקניקיות זלמן חבר לאלן טלמור השף השרקוטייר העולמי, המתמחה בייצור נקניקיות, וביחד ייצרו נקניקיות
+                    ונקניקים מעושנים באיכות מעולה וטעם בלתי נשכח!</p>
             </article>
             <a href="#" class="button">הזמינו משלוח</a>
         </div>
@@ -61,5 +65,6 @@
         </a>
     </footer>
 </body>
-</html>
 
+</html>
+<script src="../js/auth.js"></script>

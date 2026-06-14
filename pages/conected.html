@@ -37,5 +37,15 @@
         <div class="truck"></div>
         <div class="wheels"></div>
       </div> 
+      <script>
+        // שליפת שם המשתמש המחובר מה-LocalStorage
+        const currentUserName = localStorage.getItem('currentUser') || 'אורח';
+        
+        // כתיבת השם לתוך האלמנט של ה-typewriter
+        const typewriterSpan = document.querySelector('.typewriter');
+        if (typewriterSpan) {
+            typewriterSpan.textContent = currentUserName + "!";
+        }
+    </script>
 </body>
 </html>

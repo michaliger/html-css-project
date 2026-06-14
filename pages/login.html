@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>זלמנ'ס - התחברות והרשמה</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../files/images/favicon.png" type="image/x-icon">
+</head>
+
+<body dir="rtl">
+    <header class="flex-row">
+        <nav>
+            <ul class="flex-row">
+                <li class="flex-row"><a href="../index.html">דף הבית-זלמנס</a></li>
+                <li class="flex-row"><a href="about.html">אודות</a></li>
+                <li class="flex-row"><a href="menu.html">תפריט</a></li>
+                <li class="flex-row"><a href="gallery.html">גלריה</a></li>
+                <li class="flex-row"><a href="events.html">אירועים</a></li>
+
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-login-btn"
+                        href="login.html?mode=login">התחברות</a></li>
+                <li class="flex-row auth-item"><a class="auth-nav-link" id="nav-register-btn"
+                        href="login.html?mode=register">הרשמה</a></li>
+            </ul>
+        </nav>
+        <div>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="index.html">דף הבית-זלמנס</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="menu.html">תפריט</a></li>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="events.html">אירועים</a></li>
+                <li><a class="auth-nav-link" href="login.html?mode=login">התחברות</a></li>
+                <li><a class="auth-nav-link" href="login.html?mode=register">הרשמה</a></li>
+            </ul>
+        </div>
+        <a href="../index.html" class="flex-row"><img src="../files/images/index/Name-2048x561.png" alt="logo"></a>
+    </header>
+
+    <main class="flex-column main-auth">
+
+        <div id="login-section" class="auth-box flex-column">
+            <h2>התחברות לחשבון</h2>
+            <form id="login-form" class="flex-column">
+                <div class="form-group flex-column">
+                    <label for="login-email">דוא"ל</label>
+                    <input class="input" type="email" id="login-email" required autocomplete="email">
+                </div>
+                <div class="form-group flex-column">
+                    <label for="login-password">סיסמה</label>
+                    <input class="input" type="password" id="login-password" required>
+                </div>
+                <p id="login-error" class="error-msg hidden">דוא"ל או סיסמה שגויים</p>
+                <button type="submit" class="button btn-submit">התחבר</button>
+            </form>
+            <span class="toggle-link" onclick="toggleForms()">עוד לא רשום? לחץ כאן להרשמה</span>
+        </div>
+
+        <div id="register-section" class="auth-box flex-column hidden">
+            <h2>הרשמה לזלמנ'ס</h2>
+            <form id="register-form" class="flex-column">
+                <div class="form-group flex-column">
+                    <label for="reg-name">שם מלא</label>
+                    <input class="input" type="text" id="reg-name" maxlength="20" required autocomplete="name">
+                </div>
+                <div class="form-group flex-column">
+                    <label for="reg-email">דוא"ל</label>
+                    <input class="input" type="email" id="reg-email" required autocomplete="email">
+                </div>
+                <div class="form-group flex-column">
+                    <label for="reg-password">סיסמה (לפחות 6 תווים)</label>
+                    <input class="input" type="password" id="reg-password" minlength="6" required>
+                </div>
+                <p id="reg-error" class="error-msg hidden">האימייל הזה כבר קיים במערכת</p>
+                <button type="submit" class="button btn-submit">הרשם עכשיו</button>
+            </form>
+            <span class="toggle-link" onclick="toggleForms()">כבר יש לך חשבון? לחץ כאן להתחברות</span>
+        </div>
+
+    </main>
+
+    <footer class="flex-column">
+        <a href="./about.html">
+            <h3>רשת זלמנ׳ס</h3>
+            <p>© כל הזכויות שמורות לזלמנס . פיתוח טכנולוגי: משלוחים משלוחה דיגיטל | מדיניות פרטיות</p>
+        </a>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>
+<script src="../js/auth.js"></script>
